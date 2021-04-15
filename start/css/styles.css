@@ -46,6 +46,22 @@ article{
     margin-left: 15px;
     float:left;
     width: 70%;
+    margin-bottom:125px;
+}
+
+table, th, td{
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid black;
+}
+
+th,td{
+    padding: 15px;
+}
+
+th{
+    background-color:orange;
+    font-family: "Georgia", serif;
 }
 
 aside{
@@ -72,6 +88,7 @@ aside>div>ul{
 
 
 footer{
+    margin-top:20px;
     position: fixed;
     bottom: 0;
     width: 100%;
