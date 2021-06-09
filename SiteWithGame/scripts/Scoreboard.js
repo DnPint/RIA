@@ -5,14 +5,14 @@ let showBestPlayers=function(){
 
     let table = document.getElementById("myTable");
 
+    let best3 =0;
+    let best2 =0;
+    let best1 =0;
+
     Object.keys(localStorage).forEach(function(key){
 
-        let best3 =0;
-        let best2 =0;
-        let best1 =0;
-
-
         deserial = JSON.parse(localStorage.getItem(key));
+        console.log(key + " " + deserial.points);
 
  if(deserial.points>best1){
             best2=best1;
@@ -31,7 +31,7 @@ let showBestPlayers=function(){
             
             }else{
                
-                if(deserial>best3){
+                if(deserial.points>best3){
                     best3=deserial.points;
                     key3=key;
                 }
@@ -41,8 +41,10 @@ let showBestPlayers=function(){
 
     let keys=[key1,key2,key3];
 
+    console.log(keys);
+
     for(let i =0;i<4;i++){     
-        deserial = JSON.parse(localStorage.getItem(keys[i]));
+        deserial = JSON.parse(localStorage.getItem(keys[2-i]));
         if(deserial===null){
             break;
         }
