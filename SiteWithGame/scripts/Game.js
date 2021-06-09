@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 let Username;
-document.getElementById("myButton").onclick = function(){/////--------------------------------------
+document.getElementById("myButton").onclick = function(){
     Username = document.getElementById("myText").value;
     console.log("Hello",Username);
     Player.username = Username;
@@ -1033,7 +1033,7 @@ let Game = function(hero1, hero2, hero3, hero4){
 
         Player.points=score;
 
-        localStorage.setItem("player",JSON.stringify(Player));
+        localStorage.setItem(Player.username,JSON.stringify(Player));
         console.log(localStorage);
 
         
