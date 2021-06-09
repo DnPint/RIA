@@ -1,0 +1,63 @@
+<html>
+<head>
+
+	<title>Game</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+			<!-- Our CSS ref (including Bootstrap)-->
+		<link href="css/Styles.css" rel="stylesheet" />
+
+</head>
+<body>
+
+	<!-- Header-->
+	<header>
+
+	<!-- Navigation-->
+	
+	<div class="navbar">
+	<a href="home.html">Home</a></li>
+	<a class="active" href="game.html">Game</a></li>
+	<a href="scoreboard.html">Scoreboard</a></li>
+	</div>
+
+	</header>
+
+	<main>
+    <!-- Le jeu JS va s'afficher ici-->
+<label>Enter your name</label><br>
+    <input type="text" id="myText"><br>
+    <button type="button" id="myButton">Submit</button>
+    <br>
+    
+
+    
+    <div id= "selection">
+        <canvas id="Macron" class="Portrait" draggable="true" ></canvas>
+        <canvas id="Biden" class="Portrait" draggable="true" ></canvas>
+        <canvas id="Pope" class="Portrait" draggable="true" ></canvas>
+        <canvas id="Police" class="Portrait" draggable="true" ></canvas>
+        <canvas id="Doctor" class="Portrait" draggable="true" ></canvas>
+        <br>
+        <div id="zone4" class="droppable zone" ></div>
+        <div id="zone3" class="droppable zone" ></div>
+        <div id="zone2" class="droppable zone" ></div>
+        <div id="zone1" class="droppable zone" ></div>
+        <button id="startBtn" >start</button>
+    </div>
+
+	</main>
+
+
+</div>
+
+    <script src="scripts\Game.js">
+
+    </script>
+
+</body>
+</html>
