@@ -7,21 +7,44 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/Styles.css"/>
 </head>
+
 <body>
 
+    <label>Enter your name</label><br>
+    <input type="text" id="myText"><br>
+    <button type="button" id="myButton">Submit</button>
+    <br>
+
+
+    <table id='myTable'>
+        <thead>
+        <tr>
+            <th>Country</th>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+    </table>
+
+    
+
+    
     <div id= "selection">
-        <canvas id="Macron" draggable="true" ></canvas>
-        <canvas id="Biden" draggable="true" ></canvas>
-        <canvas id="Pope" draggable="true" ></canvas>
-        <canvas id="Police" draggable="true" ></canvas>
-        <canvas id="Doctor" draggable="true" ></canvas>
+        <canvas id="Macron" class="Portrait" draggable="true" ></canvas>
+        <canvas id="Biden" class="Portrait" draggable="true" ></canvas>
+        <canvas id="Pope" class="Portrait" draggable="true" ></canvas>
+        <canvas id="Police" class="Portrait" draggable="true" ></canvas>
+        <canvas id="Doctor" class="Portrait" draggable="true" ></canvas>
         <br>
-        <div id="zone4" class="droppable zone" >4</div>
-        <div id="zone3" class="droppable zone" >3</div>
-        <div id="zone2" class="droppable zone" >2</div>
-        <div id="zone1" class="droppable zone" >1</div>
+        <div id="zone4" class="droppable zone" ></div>
+        <div id="zone3" class="droppable zone" ></div>
+        <div id="zone2" class="droppable zone" ></div>
+        <div id="zone1" class="droppable zone" ></div>
         <button id="startBtn" >start</button>
     </div>
+
+
+
     <script src="scripts\Game.js">
 
     </script>
