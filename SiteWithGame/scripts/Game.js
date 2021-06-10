@@ -870,13 +870,13 @@ let Game = function(hero1, hero2, hero3, hero4){
                         switch(key){
                             case "1":
                                 selectedAction=1;
-                               // rewriteextBox();
+                                rewriteextBox();
                                 targeting=true;
                                 txtCtx.fillText("Selectionnez une cible (1-4)",100,150);
                                 break;
                             case "2":
                                 selectedAction=2;
-                               // rewriteextBox();
+                                rewriteextBox();
                                 targeting=true;
                                 txtCtx.fillText("Selectionnez une cible (1-4)",100,150);
                                 break;
