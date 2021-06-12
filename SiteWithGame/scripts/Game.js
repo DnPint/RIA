@@ -176,11 +176,11 @@ let Game = function(hero1, hero2, hero3, hero4){
 
     //load other images
     let DeathSymbol = new Image();
-    DeathSymbol.src="/ressources/OtherImages/redCross1.png";
+    DeathSymbol.src="ressources/OtherImages/redCross1.png";
     let StunSymbol =new Image();
-    StunSymbol.src="/ressources/OtherImages/stun1.png";
+    StunSymbol.src="ressources/OtherImages/stun1.png";
     let GameOvrImage= new Image();
-    GameOvrImage.src="/ressources/OtherImages/gameover.png";
+    GameOvrImage.src="ressources/OtherImages/gameover.png";
 
 
     //load hero images
